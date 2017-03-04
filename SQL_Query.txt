@@ -1,0 +1,5 @@
+ SELECT 
+	d.Dname as DepartmentName,
+	 count(*) TotalEmployees 
+FROM Employee e INNER JOIN Department d ON d.DeptNo = e.DeptNo GROUP BY d.Dname
+
